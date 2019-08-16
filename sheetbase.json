@@ -1,0 +1,40 @@
+{
+	"driveFolder": "1oQ02ZmDUaqS7wALyM1oMqx2jllGXXoh8",
+	"configs": {
+		"backend": {
+			"apiKey": "vRMFXZvgtiTXh2K2aAI3znHQUFwbbJkk",
+			"databaseId": "1WY4ARmEPKZNXCIEWdLJPa1JjLyQVhB1UQYxFsXXprYc"
+		},
+		"frontend": {
+			"backendUrl": "https://script.google.com/macros/s/AKfycbw0P3d3Q5-P3qjish7caaC2AZaf80ev3ULQZxXJgWTHe9sCSU5x1qQFjcnWfLW-y0lj/exec",
+			"apiKey": "vRMFXZvgtiTXh2K2aAI3znHQUFwbbJkk",
+			"databaseId": "1WY4ARmEPKZNXCIEWdLJPa1JjLyQVhB1UQYxFsXXprYc",
+			"databaseGids": {
+				"categories": "101",
+				"tags": "102",
+				"pages": "103",
+				"posts": "104"
+			}
+		}
+	},
+	"configMaps": {
+		"backend": ["apiKey", "databaseId"],
+		"frontend": ["apiKey", "backendUrl", "databaseId", "databaseGids"]
+	},
+	"urlMaps": {
+		"databaseId": ["db", "https://docs.google.com/spreadsheets/d/", "/edit"]
+	},
+	"setupHooks": {
+		"apiKey": ["Generate the API key", "randomStr"],
+		"databaseId": ["Create the database", "createDatabase"]
+	},
+	"models": ["categories", "tags", "pages", "posts"],
+	"deployment": {
+		"provider": "github",
+		"url": "https://sheetbase-themes.github.io/basic-angular",
+		"stagingDir": "../preview",
+		"destination": {
+			"gitUrl": "https://github.com/sheetbase-themes/basic-angular.git"
+		}
+	}
+}

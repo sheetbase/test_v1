@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Sheetbase App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <section>
+    <h1>Welcome!</h1>
+    <p>Welcome to Sheetbase, let's make something awesome! :D. If you get lost, the <a href="https://sheetbase.dev/docs" target="_blank">docs</a> here to helps.</p>
+    <p><a href="https://sheetbase.dev" target="_blank">Visit home page!</a></p>
+  </section>
+
+  <section style="margin-top: 50px;">
+
+    <h1>See your data:</h1>
+
+    <!-- tables -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md="6">
+          <div class="actions">
+            <input type="text" [(ngModel)]="table" placeholder="Sheet name, try: categories, posts, ...">
+            <ion-button color="light" (click)="loadItems()">Load data</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div class="previous">
+      Previous loaded: <a href="javascript:void(0);" *ngFor="let item of tables" (click)="table=item; loadItems()">{{ item }}</a>
+    </div>
+
+    <!-- Data list -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md="6">
+          
+          <table class="table table-bordered table-light">
+            <thead>
+              <tr>
+                <th style="width: 10%;">#</th>
+                <th style="width: 90%;">Title</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr *ngIf="!items">
+                <td colspan="3">Enter the table name & click 'Load data' to view the data.</td>
+              </tr>
+              <tr *ngIf="!!items && items.length < 1" style="text-align: center;">
+                <td colspan="3"><ion-spinner></ion-spinner></td>
+              </tr>
+              <tr class="item" *ngFor="let item of items; let i = index" (click)="logItem(item)">
+                <td>{{ item['#'] || (i + 1) }}</td>
+                <td>{{ item?.title }}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p *ngIf="!!items && items.length > 0">Total: <strong>{{ items.length }}</strong> items</p>
+
+        </ion-col>
+
+        <ion-col size="12" size-md="6" style="padding-left: 30px;">
+          <h3 style="margin-top: 25px;">Item detail:</h3>
+          <code *ngIf="!viewItem">Click the item to see.</code>
+          <code *ngIf="!!viewItem">
+            <pre>{{ viewItem }}</pre>
+          </code>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+
+
+  </section>
+
+</ion-content>

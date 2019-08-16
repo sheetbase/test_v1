@@ -1,0 +1,10 @@
+node_modules/
+
+# build
+build/
+dist/
+deploy/
+
+# test
+.nyc_output/
+coverage/
