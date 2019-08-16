@@ -75,7 +75,7 @@
 	"deployment": {
 		"provider": "github",
 		"url": "https://sheetbase.github.io/test",
-		"stagingDir": "../preview",
+		"stagingDir": "./frontend/www-prod",
 		"destination": {
 			"gitUrl": "https://github.com/sheetbase/test.git"
 		}
