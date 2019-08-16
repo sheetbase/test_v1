@@ -1,6 +1,6 @@
-# Sheetbase Theme: Basic Angular
+# Sheetbase Test
 
-The Basic (api key + database) starter theme, based on Angular + Ionic.
+A Sheetbase test app.
 
 <!-- block:header -->
 
@@ -8,48 +8,11 @@ The Basic (api key + database) starter theme, based on Angular + Ionic.
 
 <!-- /block:header -->
 
-## Preview
-
-<https://sheetbase-themes.github.io/basic-angular/>
-
-## Get started
-
-### Using the CLI
-
-- Start a project: $ `sheetbase start <project_name> basic-angular`
-
-### Manually
+## Dev
 
 - Clone this repo.
-- Install backend dependecies: $ `sheetbase backend install`.
-- Install frontend dependecies: $ `sheetbase frontend install`.
-
-Done! Now, start building an awesome app. Need help, see the docs: <https://sheetbase.dev/docs>.
-
-## Workflow
-
-### Backend
-
-Backend code lives in **backend/** folder.
-
-- Test: $ `sheetbase backend test`
-- Build: $ `sheetbase backend build`
-- Push code to server: $ `sheetbase backend push`
-- Deploy: $ `sheetbase backend deploy`
-
-### Frontend
-
-Frontend code lives in **frontend/** folder.
-
-- Test: $ `sheetbase frontend test`
-- E2E: $ `sheetbase frontend e2e`
-- Build: $ `sheetbase frontend build`
-- Prerender: $ `sheetbase frontend prerender`
-- Deploy: $ `sheetbase frontend deploy`
-
-## Documentation
-
-Read more: <https://sheetbase.dev/docs>
+- Install dependencies.
+- Run: `ng serve`
 
 ## License
 

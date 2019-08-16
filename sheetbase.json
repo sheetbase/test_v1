@@ -1,20 +1,14 @@
 {
-	"driveFolder": "1oQ02ZmDUaqS7wALyM1oMqx2jllGXXoh8",
+	"driveFolder": "106ikJCKcfDhyJFtEU62peytBVYjGCe4q",
 	"configs": {
 		"backend": {
-			"apiKey": "vRMFXZvgtiTXh2K2aAI3znHQUFwbbJkk",
-			"databaseId": "1WY4ARmEPKZNXCIEWdLJPa1JjLyQVhB1UQYxFsXXprYc"
+			"apiKey": "RU2h6FREPlzoZo2Itha28uG5toGAk78U",
+			"databaseId": "1TzMYNEOzScj3DaGkCDRXk72SzDi_vpHEkT6SAGNWRF4"
 		},
 		"frontend": {
-			"backendUrl": "https://script.google.com/macros/s/AKfycbw0P3d3Q5-P3qjish7caaC2AZaf80ev3ULQZxXJgWTHe9sCSU5x1qQFjcnWfLW-y0lj/exec",
-			"apiKey": "vRMFXZvgtiTXh2K2aAI3znHQUFwbbJkk",
-			"databaseId": "1WY4ARmEPKZNXCIEWdLJPa1JjLyQVhB1UQYxFsXXprYc",
-			"databaseGids": {
-				"categories": "101",
-				"tags": "102",
-				"pages": "103",
-				"posts": "104"
-			}
+			"backendUrl": "https://script.google.com/macros/s/AKfycbxaiKoJp0w1-0RFoGGFG2CA0XRrunSXjiH5FZDWGUsFSfFWcdlEH9szDIsxOXUC6YsJAw/exec",
+			"apiKey": "RU2h6FREPlzoZo2Itha28uG5toGAk78U",
+			"databaseId": "1TzMYNEOzScj3DaGkCDRXk72SzDi_vpHEkT6SAGNWRF4"
 		}
 	},
 	"configMaps": {
@@ -28,13 +22,22 @@
 		"apiKey": ["Generate the API key", "randomStr"],
 		"databaseId": ["Create the database", "createDatabase"]
 	},
-	"models": ["categories", "tags", "pages", "posts"],
-	"deployment": {
-		"provider": "github",
-		"url": "https://sheetbase-themes.github.io/basic-angular",
-		"stagingDir": "../preview",
-		"destination": {
-			"gitUrl": "https://github.com/sheetbase-themes/basic-angular.git"
-		}
-	}
+	"models": [
+		"categories",
+		"tags",
+		"pages",
+		"posts",
+		"threads",
+		"users",
+		"products",
+		"orders",
+		"notifications",
+		"promotions",
+		"audios",
+		"videos",
+		"bundles",
+		"authors",
+		"options"
+	],
+	"deployment": null
 }

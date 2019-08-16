@@ -3,6 +3,6 @@
 // + From terminal, run $ sheetbase config set key=value|...
 // + Or, edit configs in sheetbase.json, then run $ sheetbase config update
 export const SHEETBASE_CONFIG = {
-   "apiKey": "vRMFXZvgtiTXh2K2aAI3znHQUFwbbJkk",
-   "databaseId": "1WY4ARmEPKZNXCIEWdLJPa1JjLyQVhB1UQYxFsXXprYc"
+   "apiKey": "RU2h6FREPlzoZo2Itha28uG5toGAk78U",
+   "databaseId": "1TzMYNEOzScj3DaGkCDRXk72SzDi_vpHEkT6SAGNWRF4"
 }

@@ -3,13 +3,7 @@
 // + From terminal, run $ sheetbase config set key=value|...
 // + Or, edit configs in sheetbase.json, then run $ sheetbase config update
 export const SHEETBASE_CONFIG = {
-   "backendUrl": "https://script.google.com/macros/s/AKfycbw0P3d3Q5-P3qjish7caaC2AZaf80ev3ULQZxXJgWTHe9sCSU5x1qQFjcnWfLW-y0lj/exec",
-   "apiKey": "vRMFXZvgtiTXh2K2aAI3znHQUFwbbJkk",
-   "databaseId": "1WY4ARmEPKZNXCIEWdLJPa1JjLyQVhB1UQYxFsXXprYc",
-   "databaseGids": {
-      "categories": "101",
-      "tags": "102",
-      "pages": "103",
-      "posts": "104"
-   }
+   "backendUrl": "https://script.google.com/macros/s/AKfycbxaiKoJp0w1-0RFoGGFG2CA0XRrunSXjiH5FZDWGUsFSfFWcdlEH9szDIsxOXUC6YsJAw/exec",
+   "apiKey": "RU2h6FREPlzoZo2Itha28uG5toGAk78U",
+   "databaseId": "1TzMYNEOzScj3DaGkCDRXk72SzDi_vpHEkT6SAGNWRF4"
 }
