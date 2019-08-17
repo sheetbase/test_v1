@@ -5,20 +5,5 @@
 export const SHEETBASE_CONFIG = {
    "backendUrl": "https://script.google.com/macros/s/AKfycbxaiKoJp0w1-0RFoGGFG2CA0XRrunSXjiH5FZDWGUsFSfFWcdlEH9szDIsxOXUC6YsJAw/exec",
    "apiKey": "RU2h6FREPlzoZo2Itha28uG5toGAk78U",
-   "databaseId": "11Owi30p-FHIMH7Z44LUmA0KYiYCkMdUGBS_iApBf_rg",
-   "databaseGids": {
-      "categories": "101",
-      "tags": "102",
-      "pages": "103",
-      "posts": "104",
-      "threads": "105",
-      "products": "107",
-      "notifications": "112",
-      "promotions": "113",
-      "audios": "114",
-      "videos": "115",
-      "bundles": "116",
-      "authors": "117",
-      "options": "118"
-   }
+   "databaseId": "11Owi30p-FHIMH7Z44LUmA0KYiYCkMdUGBS_iApBf_rg"
 }
