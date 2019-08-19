@@ -3,7 +3,8 @@
 	"configs": {
 		"backend": {
 			"apiKey": "RU2h6FREPlzoZo2Itha28uG5toGAk78U",
-			"databaseId": "11Owi30p-FHIMH7Z44LUmA0KYiYCkMdUGBS_iApBf_rg"
+			"databaseId": "11Owi30p-FHIMH7Z44LUmA0KYiYCkMdUGBS_iApBf_rg",
+			"uploadFolder": "1FdFxnbYhn_fx2AnFpenc5QVlR8TUwCUf"
 		},
 		"frontend": {
 			"backendUrl": "https://script.google.com/macros/s/AKfycbxaiKoJp0w1-0RFoGGFG2CA0XRrunSXjiH5FZDWGUsFSfFWcdlEH9szDIsxOXUC6YsJAw/exec",
@@ -14,7 +15,8 @@
 	"configMaps": {
 		"backend": [
 			"apiKey",
-			"databaseId"
+			"databaseId",
+			"uploadFolder"
 		],
 		"frontend": [
 			"apiKey",
@@ -38,6 +40,10 @@
 		"databaseId": [
 			"Create the database",
 			"createDatabase"
+		],
+		"uploadFolder": [
+			"Create the upload folder",
+			"driveCreateFolder"
 		]
 	},
 	"models": [

@@ -6,12 +6,14 @@ import { auth, sheetsDriver } from '@sheetbase/user';
 import { drive } from '@sheetbase/drive';
 
 import { SHEETBASE_CONFIG } from './sheetbase.config';
+
 import { MessageTemplating } from './templates/message';
 import { OrderTemplating } from './templates/order';
+
 import appRoutes from './routes/index';
 
 // configs
-const { apiKey, databaseId } = SHEETBASE_CONFIG;
+const { apiKey, databaseId, uploadFolder } = SHEETBASE_CONFIG;
 
 /**
  * modules
@@ -48,9 +50,7 @@ const Auth = auth({
     `apiKey=${apiKey}&mode=${mode}&oobCode=${oobCode}`,
 });
 
-const Drive = drive({
-  contentFolder: '',
-});
+const Drive = drive({ uploadFolder });
 
 /**
  * routes
@@ -60,18 +60,21 @@ Sheets
 .registerRoutes({
   router: Sheetbase.Router,
   middlewares: [ ApiKeyMiddleware ],
+  disabledRoutes: [],
 });
 
 Auth
 .registerRoutes({
   router: Sheetbase.Router,
   middlewares: [ ApiKeyMiddleware ],
+  disabledRoutes: [],
 });
 
 Drive
 .registerRoutes({
   router: Sheetbase.Router,
   middlewares: [ ApiKeyMiddleware ],
+  disabledRoutes: [],
 });
 
 appRoutes();

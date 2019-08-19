@@ -12,17 +12,17 @@
       ]
    },
    "dependencies": {
-      "@sheetbase/api-key": "latest",
-      "@sheetbase/drive": "latest",
-      "@sheetbase/gmail": "latest",
-      "@sheetbase/models": "latest",
-      "@sheetbase/server": "latest",
-      "@sheetbase/sheets": "latest",
-      "@sheetbase/user": "latest"
+      "@sheetbase/api-key": "1.1.0",
+      "@sheetbase/drive": "file:../../servers/drive/sheetbase-drive-1.1.0.tgz",
+      "@sheetbase/gmail": "1.1.0",
+      "@sheetbase/models": "1.7.0",
+      "@sheetbase/server": "1.1.0",
+      "@sheetbase/sheets": "1.2.0",
+      "@sheetbase/user": "1.2.0"
    },
    "devDependencies": {
-      "@sheetbase/app-scripts": "latest",
-      "@sheetbase/testing": "latest",
+      "@sheetbase/app-scripts": "1.2.0",
+      "@sheetbase/testing": "1.1.0",
       "@types/chai": "^4.2.0",
       "@types/google-apps-script": "^0.0.56",
       "@types/mocha": "^5.2.7",
