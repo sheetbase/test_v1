@@ -12,8 +12,8 @@
       ]
    },
    "dependencies": {
-      "@sheetbase/api-key": "1.1.0",
-      "@sheetbase/drive": "file:../../servers/drive/sheetbase-drive-1.1.0.tgz",
+      "@sheetbase/api-key": "1.2.0",
+      "@sheetbase/drive": "1.1.0",
       "@sheetbase/gmail": "1.1.0",
       "@sheetbase/models": "1.7.0",
       "@sheetbase/server": "1.1.0",

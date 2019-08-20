@@ -47,7 +47,7 @@ const Auth = auth({
   databaseDriver: sheetsDriver(Sheets.toAdmin()),
   authUrl: (mode, oobCode) => ScriptApp.getService().getUrl() +
     '?e=auth/action&' +
-    `apiKey=${apiKey}&mode=${mode}&oobCode=${oobCode}`,
+    `key=${apiKey}&mode=${mode}&oobCode=${oobCode}`,
 });
 
 const Drive = drive({ uploadFolder });
