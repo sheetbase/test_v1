@@ -60,4 +60,12 @@ export class HomePage {
     console.log(item);
   }
 
+  test() {
+    console.time();
+    from(this.sheetbaseApp.database().items('posts')).subscribe(data => {
+      console.log(data);
+      console.timeEnd();
+    });
+  }
+
 }

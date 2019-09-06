@@ -1,14 +1,11 @@
 # Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
 
+node_modules/
 .googlerc.json
-
-# Hooks
-hooks/node_modules/
 
 # Backend
 backend/.clasprc.json
-backend/node_modules/
 backend/build/
 backend/dist/
 backend/deploy/
@@ -35,7 +32,6 @@ frontend/.tmp/
 frontend/.versions/
 frontend/coverage/
 frontend/www/
-frontend/node_modules/
 frontend/tmp/
 frontend/temp/
 frontend/platforms/
